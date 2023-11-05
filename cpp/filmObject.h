@@ -20,7 +20,7 @@ public:
     
     // Deep copy
     FilmObject(const FilmObject &from);
-    FilmObject &operator=(const FilmObject &from);
+    FilmObject& operator=(const FilmObject &from);
 };
 
 #endif // FILMOBJECT_H

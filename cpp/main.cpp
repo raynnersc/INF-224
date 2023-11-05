@@ -47,6 +47,7 @@ int main(int argc, const char *argv[])
         newChapters[i] = i;
 
     FilmObject *filme = new FilmObject();
+    FilmObject *filme2 = new FilmObject();
     filme->setNameFile("Film 6");
     filme->setPathFile("~/gallery/Film_6.mp4");
     filme->setDuration(duration);
@@ -56,18 +57,27 @@ int main(int argc, const char *argv[])
     for (uint8_t i = 0; i < 4; i++)
         newChapters[i] = i * 10 + 3;
 
+    *filme2 = *filme;
     filme->displayVariables(std::cout);
+    filme2->setNameFile("Film 6_novo");
+    filme2->displayVariables(std::cout);
     delete[] newChapters;
-    filme->displayVariables(std::cout);
-
-    // filme->setChapters(newNewChapters, newNumChapters);
+    filme->setNameFile("Film 7");
     filme->displayVariables(std::cout);
 
     // Free memory
     for (unsigned int i = 0; i < nbMedia; i++)
         delete media[i];
 
+
     delete filme;
+    filme2->displayVariables(std::cout);
+    
+    FilmObject *filme3 = new FilmObject(*filme2);
+    filme3->displayVariables(std::cout);
+    delete filme2;
+    filme3->displayVariables(std::cout);
+    delete filme3;
 
     return 0;
 }

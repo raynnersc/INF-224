@@ -15,10 +15,10 @@ public:
     ~PhotoObject();
     void setLatitude(float latitude);
     void setLongitude(float longitude);
-    const float getLatitude() const;
-    const float getLongitude() const;
-    const void displayVariables(std::ostream &log) override;
-    const void reproduceMedia() override;
+    float getLatitude() const;
+    float getLongitude() const;
+    void displayVariables(std::ostream &log) const override;
+    void reproduceMedia() const override;
 };
 
 #endif // PHOTOOBJECT_H

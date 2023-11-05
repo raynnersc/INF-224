@@ -20,20 +20,20 @@ void MediaObject::setPathFile(std::string pathFile)
     this->pathFile = pathFile;
 }
 
-const std::string MediaObject::getNameFile()
+std::string MediaObject::getNameFile() const
 {
     return this->nameFile;
 }
 
-const std::string MediaObject::getPathFile()
+std::string MediaObject::getPathFile() const
 {
     return this->pathFile;
 }
 
-const void MediaObject::displayVariables(std::ostream &log)
+void MediaObject::displayVariables(std::ostream &log) const
 {
     log << "File Name: " << this->getNameFile() << std::endl
         << "File path: " << this->getPathFile() << std::endl;
 }
 
-const void MediaObject::reproduceMedia() {}
+void MediaObject::reproduceMedia() const {}

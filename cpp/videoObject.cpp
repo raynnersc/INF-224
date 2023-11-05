@@ -14,18 +14,18 @@ void VideoObject::setDuration(unsigned int duration)
     this->duration = duration;
 }
 
-const unsigned int VideoObject::getDuration() const
+unsigned int VideoObject::getDuration() const
 {
     return this->duration;
 }
 
-const void VideoObject::displayVariables(std::ostream &log)
+void VideoObject::displayVariables(std::ostream &log) const
 {
     MediaObject::displayVariables(log);
     log << "Video Duration: " << this->getDuration() << std::endl;
 }
 
-const void VideoObject::reproduceMedia()
+void VideoObject::reproduceMedia() const
 {
     std::string command = "vlc " + this->getPathFile() + " &";
     std::system(command.data());

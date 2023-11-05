@@ -20,24 +20,24 @@ void PhotoObject::setLongitude(float longitude)
     this->longitude = longitude;
 }
 
-const float PhotoObject::getLatitude() const
+float PhotoObject::getLatitude() const
 {
     return this->latitude;
 }
 
-const float PhotoObject::getLongitude() const
+float PhotoObject::getLongitude() const
 {
     return this->latitude;
 }
 
-const void PhotoObject::displayVariables(std::ostream &log)
+void PhotoObject::displayVariables(std::ostream &log) const
 {
     MediaObject::displayVariables(log);
     log << "Photo Latitude: " << this->getLatitude() << std::endl
         << "Photo Longitude: " << this->getLongitude() << std::endl;
 }
 
-const void PhotoObject::reproduceMedia()
+void PhotoObject::reproduceMedia() const
 {
     std::string command = "imagej " + getPathFile() + " &";
     std::system(command.data());

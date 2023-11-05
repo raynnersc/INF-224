@@ -13,9 +13,9 @@ public:
     VideoObject(std::string nameFile, std::string pathFile, unsigned int duration);
     ~VideoObject();
     void setDuration(unsigned int duration);
-    const unsigned int getDuration() const;
-    const void reproduceMedia() override;
-    const void displayVariables(std::ostream &log) override;
+    unsigned int getDuration() const;
+    void reproduceMedia() const override;
+    void displayVariables(std::ostream &log) const override;
 };
 
 #endif // VIDEOOBJECT_H

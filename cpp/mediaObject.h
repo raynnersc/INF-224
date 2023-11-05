@@ -16,10 +16,10 @@ public:
     virtual ~MediaObject();
     void setNameFile(std::string nameFile);
     void setPathFile(std::string pathFile);
-    const std::string getNameFile();
-    const std::string getPathFile();
-    virtual const void displayVariables(std::ostream &log);
-    virtual const void reproduceMedia();
+    std::string getNameFile() const;
+    std::string getPathFile() const;
+    virtual void displayVariables(std::ostream &log) const;
+    virtual void reproduceMedia() const;
 };
 
 #endif // MEDIAOBJECT_H

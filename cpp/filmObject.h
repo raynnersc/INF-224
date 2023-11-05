@@ -14,9 +14,9 @@ public:
     FilmObject(std::string nameFile, std::string pathFile, const unsigned int duration, const unsigned int *chapters, const unsigned int numChapters);
     ~FilmObject();
     void setChapters(const unsigned int *chapters, const unsigned int numChapters);
-    const unsigned int *getChapters() const;
-    const unsigned int getNumChapters() const;
-    const void displayVariables(std::ostream &log) final;
+    unsigned int *getChapters() const;
+    unsigned int getNumChapters() const;
+    void displayVariables(std::ostream &log) const override;
     
     // Deep copy
     FilmObject(const FilmObject &from);

@@ -27,17 +27,17 @@ void FilmObject::setChapters(const unsigned int *chapters, const unsigned int nu
         this->chapters[i] = chapters[i];
 }
 
-const unsigned int *FilmObject::getChapters() const
+unsigned int *FilmObject::getChapters() const
 {
     return this->chapters;
 }
 
-const unsigned int FilmObject::getNumChapters() const
+unsigned int FilmObject::getNumChapters() const
 {
     return this->numChapters;
 }
 
-const void FilmObject::displayVariables(std::ostream &log)
+void FilmObject::displayVariables(std::ostream &log) const
 {
     VideoObject::displayVariables(log);
 

@@ -1,5 +1,0 @@
-main.o: main.cpp mediaObject.h photoObject.h videoObject.h filmObject.h
-mediaObject.o: mediaObject.cpp mediaObject.h
-photoObject.o: photoObject.cpp photoObject.h mediaObject.h
-videoObject.o: videoObject.cpp videoObject.h mediaObject.h
-filmObject.o: filmObject.cpp filmObject.h videoObject.h mediaObject.h

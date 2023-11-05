@@ -6,8 +6,8 @@
 class PhotoObject : public MediaObject
 {
 private:
-    float latitude;
-    float longitude;
+    float latitude{};
+    float longitude{};
 
 public:
     PhotoObject();
@@ -15,8 +15,8 @@ public:
     ~PhotoObject();
     void setLatitude(float latitude);
     void setLongitude(float longitude);
-    const float getLatitude();
-    const float getLongitude();
+    const float getLatitude() const;
+    const float getLongitude() const;
     const void displayVariables(std::ostream &log) override;
     const void reproduceMedia() override;
 };

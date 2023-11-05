@@ -7,8 +7,8 @@
 class MediaObject
 {
 protected:
-    std::string nameFile;
-    std::string pathFile;
+    std::string nameFile{};
+    std::string pathFile{};
 
 public:
     MediaObject();

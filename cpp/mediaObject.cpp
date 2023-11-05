@@ -1,6 +1,6 @@
 #include "mediaObject.h"
 
-MediaObject::MediaObject(){}
+MediaObject::MediaObject() : nameFile{}, pathFile{} {}
 
 MediaObject::MediaObject(std::string nameFile, std::string pathFile){
     this->nameFile = nameFile;

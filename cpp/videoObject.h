@@ -5,16 +5,17 @@
 
 class VideoObject : public MediaObject
 {
-private:
+protected:
     unsigned int duration;
+
 public:
     VideoObject();
     VideoObject(std::string nameFile, std::string pathFile, unsigned int duration);
     ~VideoObject();
     void setDuration(unsigned int duration);
     const unsigned int getDuration();
-    const void displayVariables(std::ostream &log) override;
     const void reproduceMedia() override;
+    virtual const void displayVariables(std::ostream &log) override;
 };
 
 #endif // VIDEOOBJECT_H

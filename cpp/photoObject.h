@@ -8,6 +8,7 @@ class PhotoObject : public MediaObject
 private:
     float latitude;
     float longitude;
+
 public:
     PhotoObject();
     PhotoObject(std::string nameFile, std::string pathFile, float latitude, float longitude);

@@ -1,10 +1,9 @@
 #include "photoObject.h"
 
-PhotoObject::PhotoObject(){}
+PhotoObject::PhotoObject() : MediaObject(), latitude{}, longitude{} {}
 
-PhotoObject::PhotoObject(std::string nameFile, std::string pathFile, float latitude, float longitude){
-    this->nameFile = nameFile;
-    this->pathFile = pathFile;
+PhotoObject::PhotoObject(std::string nameFile, std::string pathFile, float latitude, float longitude) :
+    MediaObject(nameFile, pathFile) {
     this->latitude = latitude;
     this->longitude = longitude;
 }
@@ -28,9 +27,8 @@ const float PhotoObject::getLongitude(){
 }
 
 const void PhotoObject::displayVariables(std::ostream &log){
-    log << "File Name: " << this->getNameFile() << std::endl
-        << "File path: " << this->getPathFile() << std::endl
-        << "Photo Latitude: " << this->getLatitude() << std::endl
+    MediaObject::displayVariables(log);
+    log << "Photo Latitude: " << this->getLatitude() << std::endl
         << "Photo Longitude: " << this->getLongitude() << std::endl;
 }
 

@@ -2,9 +2,12 @@
 #define GROUPOBJECT_H
 
 #include <list>
+#include <memory>
 #include "mediaObject.h"
 
-class GroupObject : public std::list<MediaObject *>
+using MediaPtr = std::shared_ptr<MediaObject>;
+
+class GroupObject : public std::list<MediaPtr>
 {
 private:
     std::string nameGroup{};

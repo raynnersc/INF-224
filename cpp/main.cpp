@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <string.h>
+#include <memory>
 #include "mediaObject.h"
 #include "photoObject.h"
 #include "videoObject.h"
@@ -18,25 +19,16 @@ int main(int argc, const char *argv[])
     tab[1] = 2;
     tab[2] = 3;
 
-    MediaObject *mediaObject = new MediaObject("mediaObject", "mediaObjectPath");
-    PhotoObject *photoObject = new PhotoObject("photoObject", "photoObjectPath", 1, 1);
-    VideoObject *videoObject = new VideoObject("videoObject", "videoObjectPath", 1);
-    FilmObject *filmObject = new FilmObject("filmObject", "filmObjectPath", 1, tab, 3);
-    GroupObject *groupObject = new GroupObject("groupObject");
-    GroupObject *groupObject2 = new GroupObject("groupObject2");
+    std::shared_ptr<FilmObject> film(new FilmObject("Film 1", "Gallery", 1, tab, 3));
+    std::shared_ptr<PhotoObject> photo(new PhotoObject("Photo 2", "Drive", 19.7859, 23.774));
 
-    groupObject->push_back(mediaObject);
-    groupObject->push_back(photoObject);
-    groupObject->push_back(videoObject);
-    groupObject->push_back(filmObject);
+    GroupObject group("Group 1");
+    group.push_back(film);
+    group.push_back(photo);
+    group.displayVariables(std::cout);
     
-    groupObject2->push_back(mediaObject);
-    groupObject2->push_back(photoObject);
-    groupObject2->push_back(videoObject);
-    groupObject2->push_back(filmObject);
-
-    groupObject->displayVariables(std::cout);
-    groupObject2->displayVariables(std::cout);
+    film.reset();
+    photo.reset();
 
     return 0;
 }

@@ -8,7 +8,9 @@ PhotoObject::PhotoObject(std::string nameFile, std::string pathFile, float latit
     this->longitude = longitude;
 }
 
-PhotoObject::~PhotoObject() {}
+PhotoObject::~PhotoObject() {
+    std::cout << "PhotoObject destructor called" << std::endl;
+}
 
 void PhotoObject::setLatitude(float latitude)
 {

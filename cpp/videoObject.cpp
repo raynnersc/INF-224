@@ -7,7 +7,9 @@ VideoObject::VideoObject(std::string nameFile, std::string pathFile, unsigned in
     this->duration = duration;
 }
 
-VideoObject::~VideoObject() {}
+VideoObject::~VideoObject() {
+    std::cout << "VideoObject destructor called" << std::endl;
+}
 
 void VideoObject::setDuration(unsigned int duration)
 {
@@ -27,6 +29,6 @@ void VideoObject::displayVariables(std::ostream &log) const
 
 void VideoObject::reproduceMedia() const
 {
-    std::string command = "vlc " + this->getPathFile() + " &";
+    std::string command = "mpv " + this->getPathFile() + " &";
     std::system(command.data());
 }

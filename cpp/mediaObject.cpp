@@ -8,7 +8,9 @@ MediaObject::MediaObject(std::string nameFile, std::string pathFile)
     this->pathFile = pathFile;
 }
 
-MediaObject::~MediaObject() {}
+MediaObject::~MediaObject() {
+    std::cout << "MediaObject destructor called" << std::endl;
+}
 
 void MediaObject::setNameFile(std::string nameFile)
 {

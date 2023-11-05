@@ -13,6 +13,7 @@ FilmObject::FilmObject(std::string nameFile, std::string pathFile, const unsigne
 
 FilmObject::~FilmObject()
 {
+    std::cout << "FilmObject destructor called" << std::endl;
     delete[] this->chapters;
 }
 

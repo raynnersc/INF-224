@@ -11,24 +11,28 @@
 #include "videoObject.h"
 #include "filmObject.h"
 #include "groupObject.h"
+#include "managerObject.h"  
 
 int main(int argc, const char *argv[])
 {
-    unsigned int *tab = new unsigned int[3];
-    tab[0] = 1;
-    tab[1] = 2;
-    tab[2] = 3;
+    ManagerObject *manager = new ManagerObject();
+    PhotoPtr photo(new PhotoObject("Photo 4 of Group", "Drive", 19.7859, 23.774));
 
-    std::shared_ptr<FilmObject> film(new FilmObject("Film 1", "Gallery", 1, tab, 3));
-    std::shared_ptr<PhotoObject> photo(new PhotoObject("Photo 2", "Drive", 19.7859, 23.774));
+    manager->createPhoto("Photo 0", "~/gallery/Photo_0.png", 19.7859, 23.774);
+    manager->createGroup("Group 1");
 
-    GroupObject group("Group 1");
-    group.push_back(film);
-    group.push_back(photo);
-    group.displayVariables(std::cout);
+    manager->findGroup("Group 1")->push_back(photo);
+    manager->displayGroup("Group 1", std::cout);
+    manager->deleteGroup("Group 1");
+    manager->displayGroup("Group 1", std::cout);
     
-    film.reset();
-    photo.reset();
+    manager->displayMedia("Photo 1", std::cout);
+    manager->displayMedia("Photo 2", std::cout);
+    
+    manager->reproduceMedia("Photo 1");    
+    manager->deleteMedia("Photo 1");
+
+    delete manager;
 
     return 0;
 }

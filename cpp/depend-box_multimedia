@@ -1,0 +1,9 @@
+main.o: main.cpp mediaObject.h photoObject.h videoObject.h filmObject.h \
+ groupObject.h managerObject.h
+mediaObject.o: mediaObject.cpp mediaObject.h
+photoObject.o: photoObject.cpp photoObject.h mediaObject.h
+videoObject.o: videoObject.cpp videoObject.h mediaObject.h
+filmObject.o: filmObject.cpp filmObject.h videoObject.h mediaObject.h
+groupObject.o: groupObject.cpp groupObject.h mediaObject.h
+managerObject.o: managerObject.cpp managerObject.h mediaObject.h \
+ groupObject.h photoObject.h videoObject.h filmObject.h

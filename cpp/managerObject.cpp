@@ -107,11 +107,11 @@ std::string ManagerObject::reproduceMedia<std::string>(std::string nameFile)
 {
     auto it = this->findMedia(nameFile);
     if(!it)
-        return ("Media " + nameFile + " not found");
+        return ("Media " + nameFile + " not found" + endLine);
     else
     {
         it->reproduceMedia();
-        return ("Media " + nameFile + " is being reproduced");
+        return ("Media " + nameFile + " is being reproduced" + endLine);
     }
 }
 

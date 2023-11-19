@@ -49,6 +49,7 @@ int main(int argc, const char *argv[])
 
     ManagerObject manager = ManagerObject();
     manager.createPhoto("Photo_0", "~/gallery/Photo_0.png", 19.7859, 23.774);
+    manager.createVideo("Video_1", "~/gallery/Video_1.mp4", 120);
 
     // cree le TCPServer
     auto *server =

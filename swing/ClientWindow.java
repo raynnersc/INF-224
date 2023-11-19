@@ -43,6 +43,7 @@ public class ClientWindow extends JFrame {
         super("Client Window");
         setLayout(new BorderLayout());
         textArea = new JTextArea(20, 60);
+        textArea.setEditable(false);
         
         panel = new JPanel(new BorderLayout());
         label = new JLabel("Enter your media/group name:");

@@ -39,6 +39,14 @@ void PhotoObject::displayVariables(std::ostream &log) const
         << "Photo Longitude: " << this->getLongitude() << std::endl;
 }
 
+std::string PhotoObject::displayVariables() const
+{
+    std::string str = MediaObject::displayVariables();
+    str += "Photo Latitude: " + std::to_string(this->getLatitude()) + endLine;
+    str += "Photo Longitude: " + std::to_string(this->getLongitude()) + endLine;
+    return str;
+}
+
 void PhotoObject::reproduceMedia() const
 {
     std::string command = "imagej " + getPathFile() + " &";

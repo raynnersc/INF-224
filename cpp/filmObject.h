@@ -3,6 +3,8 @@
 
 #include "videoObject.h"
 
+extern std::string endLine;
+
 class FilmObject : public VideoObject
 {
 private:
@@ -17,7 +19,7 @@ public:
     unsigned int *getChapters() const;
     unsigned int getNumChapters() const;
     void displayVariables(std::ostream &log) const override;
-    
+    std::string displayVariables() const override;
     // Deep copy
     FilmObject(const FilmObject &from);
     FilmObject& operator=(const FilmObject &from);

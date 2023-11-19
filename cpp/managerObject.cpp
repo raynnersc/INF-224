@@ -49,6 +49,11 @@ GroupPtr ManagerObject::findGroup(std::string nameGroup)
         return nullptr;
 }
 
+std::string ManagerObject::find(std::string nameFile)
+{
+    return (this->displayGroup(nameFile) + this->displayMedia(nameFile));
+}
+
 void ManagerObject::displayMedia(std::string nameFile, std::ostream &log)
 {
     auto it = this->findMedia(nameFile);
@@ -67,13 +72,47 @@ void ManagerObject::displayGroup(std::string nameGroup, std::ostream &log)
         it->displayVariables(log);
 }
 
-void ManagerObject::reproduceMedia(std::string nameFile)
+std::string ManagerObject::displayMedia(std::string nameFile)
+{
+    auto it = this->findMedia(nameFile);
+    if(!it)
+        return ("Media " + nameFile + " not found" + endLine);
+    else
+        return it->displayVariables();
+}
+
+std::string ManagerObject::displayGroup(std::string nameFile)
+{
+    auto it = this->findGroup(nameFile);
+    if(!it)
+        return ("Group " + nameFile + " not found" + endLine);
+    else
+        return it->displayVariables();
+}
+
+template <>
+VoidType ManagerObject::reproduceMedia<VoidType>(std::string nameFile)
 {
     auto it = this->findMedia(nameFile);
     if(!it)
         std::cout << "Media " << nameFile << " not found" << std::endl;
     else
         it->reproduceMedia();
+    
+    return VoidType();
+}
+
+template <>
+std::string ManagerObject::reproduceMedia<std::string>(std::string nameFile)
+{
+    auto it = this->findMedia(nameFile);
+    if(!it)
+        return ("Media " + nameFile + " not found");
+    else
+    {
+        it->reproduceMedia();
+        return ("Media " + nameFile + " is being reproduced");
+    }
 }
 
 void ManagerObject::deleteMedia(std::string nameFile)

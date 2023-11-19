@@ -20,3 +20,13 @@ void GroupObject::displayVariables(std::ostream &log) const
         (*it)->displayVariables(log);
     }
 }
+
+std::string GroupObject::displayVariables() const
+{
+    std::string str = "Group Name: " + this->getNameGroup() + this->endLine;
+    for (auto it = this->begin(); it != this->end(); ++it) //for(auto &it : *this)
+    {
+        str += (*it)->displayVariables();
+    }
+    return str;
+}

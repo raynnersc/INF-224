@@ -3,6 +3,8 @@
 
 #include "mediaObject.h"
 
+extern std::string endLine;
+
 class PhotoObject : public MediaObject
 {
 private:
@@ -18,6 +20,7 @@ public:
     float getLatitude() const;
     float getLongitude() const;
     void displayVariables(std::ostream &log) const override;
+    std::string displayVariables() const override;
     void reproduceMedia() const override;
 };
 

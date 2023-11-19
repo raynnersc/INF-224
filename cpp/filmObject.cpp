@@ -46,6 +46,16 @@ void FilmObject::displayVariables(std::ostream &log) const
         log << "Chapter " << i << ": " << this->getChapters()[i] << std::endl;
 }
 
+std::string FilmObject::displayVariables() const
+{
+    std::string str = VideoObject::displayVariables();
+
+    for (unsigned int i = 0; i < this->getNumChapters(); i++)
+        str += "Chapter " + std::to_string(i) + ": " + std::to_string(this->getChapters()[i]) + endLine;
+
+    return str;
+}
+
 // Deep copy
 FilmObject::FilmObject(const FilmObject &from) : VideoObject(from)
 {

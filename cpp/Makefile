@@ -14,7 +14,7 @@ PROG = box_multimedia
 #
 # Fichiers sources (NE PAS METTRE les .h ni les .o seulement les .cpp)
 #
-SOURCES = main.cpp mediaObject.cpp photoObject.cpp videoObject.cpp filmObject.cpp groupObject.cpp managerObject.cpp
+SOURCES = main.cpp mediaObject.cpp photoObject.cpp videoObject.cpp filmObject.cpp groupObject.cpp managerObject.cpp ccsocket.cpp tcpserver.cpp protocolCom.cpp
 
 #
 # Fichiers objets (ne pas modifier sauf si l'extension n'est pas .cpp)
@@ -43,7 +43,7 @@ LDFLAGS =
 # Librairies a utiliser
 # Exemple: LDLIBS = -L/usr/local/qt/lib -lqt
 #
-LDLIBS = 
+LDLIBS = -lpthread
 
 
 ##########################################

@@ -27,6 +27,13 @@ void VideoObject::displayVariables(std::ostream &log) const
     log << "Video Duration: " << this->getDuration() << std::endl;
 }
 
+std::string VideoObject::displayVariables() const
+{
+    std::string str = MediaObject::displayVariables();
+    str += "Video Duration: " + std::to_string(this->getDuration()) + endLine;
+    return str;
+}
+
 void VideoObject::reproduceMedia() const
 {
     std::string command = "mpv " + this->getPathFile() + " &";

@@ -3,6 +3,8 @@
 
 #include "mediaObject.h"
 
+extern std::string endLine;
+
 class VideoObject : public MediaObject
 {
 protected:
@@ -16,6 +18,7 @@ public:
     unsigned int getDuration() const;
     void reproduceMedia() const override;
     void displayVariables(std::ostream &log) const override;
+    std::string displayVariables() const override;
 };
 
 #endif // VIDEOOBJECT_H

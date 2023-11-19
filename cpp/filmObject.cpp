@@ -56,7 +56,6 @@ std::string FilmObject::displayVariables() const
     return str;
 }
 
-// Deep copy
 FilmObject::FilmObject(const FilmObject &from) : VideoObject(from)
 {
     this->numChapters = from.numChapters;

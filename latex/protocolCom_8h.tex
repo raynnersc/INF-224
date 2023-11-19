@@ -1,0 +1,63 @@
+\hypertarget{protocolCom_8h}{}\doxysection{cpp/protocol\+Com.h File Reference}
+\label{protocolCom_8h}\index{cpp/protocolCom.h@{cpp/protocolCom.h}}
+
+
+Header file for the communication protocol.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}manager\+Object.\+h\char`\"{}}\newline
+Include dependency graph for protocol\+Com.\+h\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{protocolCom_8h_a7a46c43ff72fa05fa0f0f1fe26574452}{protocol}} (std\+::string request, \mbox{\hyperlink{classManagerObject}{Manager\+Object}} \&manager\+Object)
+\begin{DoxyCompactList}\small\item\em Function to process a protocol request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{protocolCom_8h_a8bee2f553d74413a9118e19f54260e19}\label{protocolCom_8h_a8bee2f553d74413a9118e19f54260e19}} 
+std\+::string {\bfseries end\+Line}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the communication protocol. 
+
+\begin{DoxyAuthor}{Author}
+Raynner Schnneider Carvalho 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/11-\/19 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{protocolCom_8h_a7a46c43ff72fa05fa0f0f1fe26574452}\label{protocolCom_8h_a7a46c43ff72fa05fa0f0f1fe26574452}} 
+\index{protocolCom.h@{protocolCom.h}!protocol@{protocol}}
+\index{protocol@{protocol}!protocolCom.h@{protocolCom.h}}
+\doxysubsubsection{\texorpdfstring{protocol()}{protocol()}}
+{\footnotesize\ttfamily std\+::string protocol (\begin{DoxyParamCaption}\item[{std\+::string}]{request,  }\item[{\mbox{\hyperlink{classManagerObject}{Manager\+Object}} \&}]{manager\+Object }\end{DoxyParamCaption})}
+
+
+
+Function to process a protocol request. 
+
+This function takes a protocol request, parses it, and performs the corresponding action using the \mbox{\hyperlink{classManagerObject}{Manager\+Object}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The protocol request string. \\
+\hline
+{\em manager\+Object} & The \mbox{\hyperlink{classManagerObject}{Manager\+Object}} used to perform actions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the result or an error message. 
+\end{DoxyReturn}

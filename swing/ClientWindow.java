@@ -1,3 +1,12 @@
+
+/**
+ * @file ClientWindow.java
+ * @author Raynner Schnneider Carvalho
+ * @brief Graphic interface for the client
+ * @version 1.0.0
+ * @date 2023-11-19
+ */
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.io.BufferedReader;
@@ -22,6 +31,10 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JToolBar;
 
+/**
+ * @class ClientWindow
+ * @brief Represents the graphical interface for the client application.
+ */
 public class ClientWindow extends JFrame {
     private static final long serialVersionUID = 1L;
     JTextArea textArea;
@@ -39,12 +52,15 @@ public class ClientWindow extends JFrame {
     static int port = DEFAULT_PORT;
     static Client client = null;
 
+    /**
+     * @brief Default constructor for the ClientWindow class.
+     */
     public ClientWindow() {
         super("Client Window");
         setLayout(new BorderLayout());
         textArea = new JTextArea(20, 60);
         textArea.setEditable(false);
-        
+
         panel = new JPanel(new BorderLayout());
         label = new JLabel("Enter your media/group name:");
         textField = new JTextField(60);
@@ -96,6 +112,10 @@ public class ClientWindow extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * @class ConnectAction
+     * @brief Action class for the "Connect" button/menu item.
+     */
     private class ConnectAction extends AbstractAction {
         public ConnectAction() {
             super("Connect");
@@ -112,15 +132,18 @@ public class ClientWindow extends JFrame {
                 client = new Client(host, port);
                 System.out.println("Client connected to " + host + ":" + port);
                 textArea.append("Client connected to " + host + ":" + port + "\n");
-              }
-              catch (Exception ex) {
-                System.err.println("Client: Couldn't connect to "+host+":"+port);
-                textArea.append("Client: Couldn't connect to "+host+":"+port+"\n");
+            } catch (Exception ex) {
+                System.err.println("Client: Couldn't connect to " + host + ":" + port);
+                textArea.append("Client: Couldn't connect to " + host + ":" + port + "\n");
                 // System.exit(1);
-              }
+            }
         }
     }
 
+    /**
+     * @class FindAction
+     * @brief Action class for the "Find" button/menu item.
+     */
     private class FindAction extends AbstractAction {
         public FindAction() {
             super("Find");
@@ -134,6 +157,10 @@ public class ClientWindow extends JFrame {
         }
     }
 
+    /**
+     * @class DisplayGroupAction
+     * @brief Action class for the "Display Group" button/menu item.
+     */
     private class DisplayGroupAction extends AbstractAction {
         public DisplayGroupAction() {
             super("Display Group");
@@ -147,6 +174,10 @@ public class ClientWindow extends JFrame {
         }
     }
 
+    /**
+     * @class DisplayMediaAction
+     * @brief Action class for the "Display Media" button/menu item.
+     */
     private class DisplayMediaAction extends AbstractAction {
         public DisplayMediaAction() {
             super("Display Media");
@@ -160,6 +191,10 @@ public class ClientWindow extends JFrame {
         }
     }
 
+    /**
+     * @class ReproduceAction
+     * @brief Action class for the "Reproduce" button/menu item.
+     */
     private class ReproduceAction extends AbstractAction {
         public ReproduceAction() {
             super("Reproduce");
@@ -173,6 +208,10 @@ public class ClientWindow extends JFrame {
         }
     }
 
+    /**
+     * @class ExitAction
+     * @brief Action class for the "Exit" button/menu item.
+     */
     private class ExitAction extends AbstractAction {
         public ExitAction() {
             super("Exit");
@@ -184,6 +223,10 @@ public class ClientWindow extends JFrame {
         }
     }
 
+    /**
+     * @brief Main method to start the client application.
+     * @param args Command-line arguments.
+     */
     public static void main(String[] args) {
 
         if (args.length >= 1)
@@ -194,6 +237,10 @@ public class ClientWindow extends JFrame {
         new ClientWindow();
     }
 
+    /**
+     * @class Client
+     * @brief Represents a client connecting to the server.
+     */
     private static class Client {
         private Socket sock;
         private BufferedReader input;

@@ -1,0 +1,162 @@
+\hypertarget{classMediaObject}{}\doxysection{Media\+Object Class Reference}
+\label{classMediaObject}\index{MediaObject@{MediaObject}}
+
+
+Inheritance diagram for Media\+Object\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMediaObject_a423bfe8ba55903afd9c4f55d04da131d}\label{classMediaObject_a423bfe8ba55903afd9c4f55d04da131d}} 
+\mbox{\hyperlink{classMediaObject_a423bfe8ba55903afd9c4f55d04da131d}{Media\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classMediaObject}{Media\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMediaObject_a4e68d862c5316386dca0282533ed2d86}{Media\+Object}} (std\+::string name\+File, std\+::string path\+File)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for \mbox{\hyperlink{classMediaObject}{Media\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMediaObject_a650ada28f28f01c87f51d717daadd1e8}\label{classMediaObject_a650ada28f28f01c87f51d717daadd1e8}} 
+virtual \mbox{\hyperlink{classMediaObject_a650ada28f28f01c87f51d717daadd1e8}{$\sim$\+Media\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \mbox{\hyperlink{classMediaObject}{Media\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMediaObject_a61807832ec5767547946a06fa0061688}{set\+Name\+File}} (std\+::string name\+File)
+\begin{DoxyCompactList}\small\item\em Set the name of the media file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMediaObject_a4c095c7e1604c393079a1e03bdc25568}{set\+Path\+File}} (std\+::string path\+File)
+\begin{DoxyCompactList}\small\item\em Set the path to the media file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMediaObject_adf5eac5784a88ad28b050671427210f7}{get\+Name\+File}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the media file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMediaObject_aaa81a3e28bbbbff3e914e5227197cdf8}{get\+Path\+File}} () const
+\begin{DoxyCompactList}\small\item\em Get the path to the media file. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMediaObject_a1f1f8dc66767b03bb604a9051330238d}{display\+Variables}} (std\+::ostream \&log) const
+\begin{DoxyCompactList}\small\item\em Display the variables of the media object. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classMediaObject_a99df1a9b433d25fec2292ad0076c984b}{display\+Variables}} () const
+\begin{DoxyCompactList}\small\item\em Display the variables of the media object as a string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMediaObject_a1cca3ab33c1a08808acc0f673342e9b6}\label{classMediaObject_a1cca3ab33c1a08808acc0f673342e9b6}} 
+virtual void \mbox{\hyperlink{classMediaObject_a1cca3ab33c1a08808acc0f673342e9b6}{reproduce\+Media}} () const
+\begin{DoxyCompactList}\small\item\em Virtual function to reproduce the media. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMediaObject_a504537f4d192d48168554f0029e07567}\label{classMediaObject_a504537f4d192d48168554f0029e07567}} 
+std\+::string {\bfseries name\+File} \{\}
+\item 
+\mbox{\Hypertarget{classMediaObject_aa149da42d96e5f5bd7789e05259b43be}\label{classMediaObject_aa149da42d96e5f5bd7789e05259b43be}} 
+std\+::string {\bfseries path\+File} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMediaObject_a4e68d862c5316386dca0282533ed2d86}\label{classMediaObject_a4e68d862c5316386dca0282533ed2d86}} 
+\index{MediaObject@{MediaObject}!MediaObject@{MediaObject}}
+\index{MediaObject@{MediaObject}!MediaObject@{MediaObject}}
+\doxysubsubsection{\texorpdfstring{MediaObject()}{MediaObject()}}
+{\footnotesize\ttfamily Media\+Object\+::\+Media\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File,  }\item[{std\+::string}]{path\+File }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for \mbox{\hyperlink{classMediaObject}{Media\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media file. \\
+\hline
+{\em path\+File} & The path to the media file. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMediaObject_a99df1a9b433d25fec2292ad0076c984b}\label{classMediaObject_a99df1a9b433d25fec2292ad0076c984b}} 
+\index{MediaObject@{MediaObject}!displayVariables@{displayVariables}}
+\index{displayVariables@{displayVariables}!MediaObject@{MediaObject}}
+\doxysubsubsection{\texorpdfstring{displayVariables()}{displayVariables()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Media\+Object\+::display\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Display the variables of the media object as a string. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the media object variables. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classFilmObject_a1544577d732bdf82a5e986a9a94bf25e}{Film\+Object}}, \mbox{\hyperlink{classPhotoObject_ab5ca589ed51655063507539ac5b2238f}{Photo\+Object}}, and \mbox{\hyperlink{classVideoObject_a04848b8846f5aaeda4f798639cdf0878}{Video\+Object}}.
+
+\mbox{\Hypertarget{classMediaObject_a1f1f8dc66767b03bb604a9051330238d}\label{classMediaObject_a1f1f8dc66767b03bb604a9051330238d}} 
+\index{MediaObject@{MediaObject}!displayVariables@{displayVariables}}
+\index{displayVariables@{displayVariables}!MediaObject@{MediaObject}}
+\doxysubsubsection{\texorpdfstring{displayVariables()}{displayVariables()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Media\+Object\+::display\+Variables (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{log }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Display the variables of the media object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & The output stream to which the variables will be displayed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classFilmObject_ae70bfd20326c7b7ce06413e7ef5c1e45}{Film\+Object}}, \mbox{\hyperlink{classPhotoObject_a99a93b20ef0b4c84227c194a2cfaefdd}{Photo\+Object}}, and \mbox{\hyperlink{classVideoObject_a3bd3b71ead642380355804b2d8a29472}{Video\+Object}}.
+
+\mbox{\Hypertarget{classMediaObject_adf5eac5784a88ad28b050671427210f7}\label{classMediaObject_adf5eac5784a88ad28b050671427210f7}} 
+\index{MediaObject@{MediaObject}!getNameFile@{getNameFile}}
+\index{getNameFile@{getNameFile}!MediaObject@{MediaObject}}
+\doxysubsubsection{\texorpdfstring{getNameFile()}{getNameFile()}}
+{\footnotesize\ttfamily std\+::string Media\+Object\+::get\+Name\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the media file. 
+
+\begin{DoxyReturn}{Returns}
+The name of the media file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMediaObject_aaa81a3e28bbbbff3e914e5227197cdf8}\label{classMediaObject_aaa81a3e28bbbbff3e914e5227197cdf8}} 
+\index{MediaObject@{MediaObject}!getPathFile@{getPathFile}}
+\index{getPathFile@{getPathFile}!MediaObject@{MediaObject}}
+\doxysubsubsection{\texorpdfstring{getPathFile()}{getPathFile()}}
+{\footnotesize\ttfamily std\+::string Media\+Object\+::get\+Path\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the path to the media file. 
+
+\begin{DoxyReturn}{Returns}
+The path to the media file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMediaObject_a61807832ec5767547946a06fa0061688}\label{classMediaObject_a61807832ec5767547946a06fa0061688}} 
+\index{MediaObject@{MediaObject}!setNameFile@{setNameFile}}
+\index{setNameFile@{setNameFile}!MediaObject@{MediaObject}}
+\doxysubsubsection{\texorpdfstring{setNameFile()}{setNameFile()}}
+{\footnotesize\ttfamily void Media\+Object\+::set\+Name\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
+
+
+
+Set the name of the media file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMediaObject_a4c095c7e1604c393079a1e03bdc25568}\label{classMediaObject_a4c095c7e1604c393079a1e03bdc25568}} 
+\index{MediaObject@{MediaObject}!setPathFile@{setPathFile}}
+\index{setPathFile@{setPathFile}!MediaObject@{MediaObject}}
+\doxysubsubsection{\texorpdfstring{setPathFile()}{setPathFile()}}
+{\footnotesize\ttfamily void Media\+Object\+::set\+Path\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path\+File }\end{DoxyParamCaption})}
+
+
+
+Set the path to the media file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+File} & The path to the media file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{mediaObject_8h}{media\+Object.\+h}}\item 
+cpp/media\+Object.\+cpp\end{DoxyCompactItemize}

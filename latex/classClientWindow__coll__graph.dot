@@ -1,0 +1,25 @@
+digraph "ClientWindow"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="ClientWindow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents the graphical interface for the client application."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="JFrame",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" toolBar" ];
+  Node3 [label="JToolBar",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" menuBar" ];
+  Node4 [label="JMenuBar",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" textArea" ];
+  Node5 [label="JTextArea",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" textField" ];
+  Node6 [label="JTextField",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" client" ];
+  Node7 [label="ClientWindow.Client",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="Represents a client connecting to the server."];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" menu" ];
+  Node8 [label="JMenu",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" label" ];
+  Node9 [label="JLabel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" panel" ];
+  Node10 [label="JPanel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

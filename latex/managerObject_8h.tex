@@ -1,0 +1,64 @@
+\hypertarget{managerObject_8h}{}\doxysection{cpp/manager\+Object.h File Reference}
+\label{managerObject_8h}\index{cpp/managerObject.h@{cpp/managerObject.h}}
+
+
+Header file for the \mbox{\hyperlink{classManagerObject}{Manager\+Object}} class.  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}media\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}group\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}photo\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}film\+Object.\+h\char`\"{}}\newline
+Include dependency graph for manager\+Object.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structVoidType}{Void\+Type}}
+\item 
+class \mbox{\hyperlink{classManagerObject}{Manager\+Object}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{managerObject_8h_ac5ca7afc2766e1e498f87e0535036c2b}\label{managerObject_8h_ac5ca7afc2766e1e498f87e0535036c2b}} 
+using {\bfseries Photo\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPhotoObject}{Photo\+Object}} $>$
+\item 
+\mbox{\Hypertarget{managerObject_8h_aae7d8d39a8a950921ca7569e41303447}\label{managerObject_8h_aae7d8d39a8a950921ca7569e41303447}} 
+using {\bfseries Video\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVideoObject}{Video\+Object}} $>$
+\item 
+\mbox{\Hypertarget{managerObject_8h_a7fcaf901ba2017170428e3cd4e1e80ea}\label{managerObject_8h_a7fcaf901ba2017170428e3cd4e1e80ea}} 
+using {\bfseries Film\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFilmObject}{Film\+Object}} $>$
+\item 
+\mbox{\Hypertarget{managerObject_8h_af1ada5acb8236adb9d1203caf4b06ff7}\label{managerObject_8h_af1ada5acb8236adb9d1203caf4b06ff7}} 
+using {\bfseries Media\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMediaObject}{Media\+Object}} $>$
+\item 
+\mbox{\Hypertarget{managerObject_8h_af93083a2a73ab11917ff7e959f260201}\label{managerObject_8h_af93083a2a73ab11917ff7e959f260201}} 
+using {\bfseries Group\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroupObject}{Group\+Object}} $>$
+\item 
+\mbox{\Hypertarget{managerObject_8h_ae6a6e5f4be63ac9c6aef0b804787f0b8}\label{managerObject_8h_ae6a6e5f4be63ac9c6aef0b804787f0b8}} 
+using {\bfseries Media\+Map} = std\+::map$<$ std\+::string, Media\+Ptr $>$
+\item 
+\mbox{\Hypertarget{managerObject_8h_afcd26e1e6da93581da164b0eca864354}\label{managerObject_8h_afcd26e1e6da93581da164b0eca864354}} 
+using {\bfseries Group\+Map} = std\+::map$<$ std\+::string, Group\+Ptr $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the \mbox{\hyperlink{classManagerObject}{Manager\+Object}} class. 
+
+\begin{DoxyAuthor}{Author}
+Raynner Schnneider Carvalho 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/11-\/19 
+\end{DoxyDate}

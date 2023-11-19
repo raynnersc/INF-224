@@ -37,3 +37,6 @@
 # Specific files
 box_multimedia
 depend-*
+
+# Test files
+files/*

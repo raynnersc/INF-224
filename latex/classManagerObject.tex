@@ -1,0 +1,319 @@
+\hypertarget{classManagerObject}{}\doxysection{Manager\+Object Class Reference}
+\label{classManagerObject}\index{ManagerObject@{ManagerObject}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classManagerObject_a0f0c2a0092c37d2453bae5a7903333bc}\label{classManagerObject_a0f0c2a0092c37d2453bae5a7903333bc}} 
+\mbox{\hyperlink{classManagerObject_a0f0c2a0092c37d2453bae5a7903333bc}{Manager\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classManagerObject}{Manager\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classManagerObject_a7dad38cb45d277950a0b77b0c4f7a0af}\label{classManagerObject_a7dad38cb45d277950a0b77b0c4f7a0af}} 
+\mbox{\hyperlink{classManagerObject_a7dad38cb45d277950a0b77b0c4f7a0af}{$\sim$\+Manager\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classManagerObject}{Manager\+Object}}. \end{DoxyCompactList}\item 
+Photo\+Ptr \mbox{\hyperlink{classManagerObject_ae65b688c50558a5b3db62d91b154f476}{create\+Photo}} (std\+::string name\+File, std\+::string path\+File, float latitude, float longitude)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classPhotoObject}{Photo\+Object}} and add it to the manager. \end{DoxyCompactList}\item 
+Video\+Ptr \mbox{\hyperlink{classManagerObject_a1347a5c6694c02065bf94810c59cccec}{create\+Video}} (std\+::string name\+File, std\+::string path\+File, int duration)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classVideoObject}{Video\+Object}} and add it to the manager. \end{DoxyCompactList}\item 
+Film\+Ptr \mbox{\hyperlink{classManagerObject_a2fcd3031ad46dfd4f195d778710bc603}{create\+Film}} (std\+::string name\+File, std\+::string path\+File, int duration, unsigned int $\ast$tab, unsigned int size)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classFilmObject}{Film\+Object}} and add it to the manager. \end{DoxyCompactList}\item 
+Group\+Ptr \mbox{\hyperlink{classManagerObject_a731bf425c55616941861265bacbd7bfe}{create\+Group}} (std\+::string name\+Group)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classGroupObject}{Group\+Object}} and add it to the manager. \end{DoxyCompactList}\item 
+Media\+Ptr \mbox{\hyperlink{classManagerObject_a99087b324651a7f294548bcbacc3ba58}{find\+Media}} (std\+::string name\+File)
+\begin{DoxyCompactList}\small\item\em Find a media object by its name. \end{DoxyCompactList}\item 
+Group\+Ptr \mbox{\hyperlink{classManagerObject_ade248b266c146bce16952bc4d5340aea}{find\+Group}} (std\+::string name\+Group)
+\begin{DoxyCompactList}\small\item\em Find a group by its name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classManagerObject_a3b9f585435f5243ffac8fb251746b065}{find}} (std\+::string name\+File)
+\begin{DoxyCompactList}\small\item\em Find and display the variables of a media object and/or group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classManagerObject_abf4d874f956aeaed8bf39c213a88191b}{display\+Media}} (std\+::string name\+File, std\+::ostream \&log)
+\begin{DoxyCompactList}\small\item\em Display the variables of a media object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classManagerObject_a69bde6ed0f01a3f45b3f62a6fbeb2b59}{display\+Group}} (std\+::string name\+Group, std\+::ostream \&log)
+\begin{DoxyCompactList}\small\item\em Display the variables of a group. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classManagerObject_a606514c1e10ea8827ef206e5630a6ef9}{display\+Media}} (std\+::string name\+File)
+\begin{DoxyCompactList}\small\item\em Display the variables of a media object as a string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classManagerObject_ab82eaad305c94dcbd21a185f616ecb11}{display\+Group}} (std\+::string name\+Group)
+\begin{DoxyCompactList}\small\item\em Display the variables of a group as a string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{classManagerObject_a25a1f25eec25769b8d19608f7122b1c0}{reproduce\+Media}} (std\+::string name\+File)
+\begin{DoxyCompactList}\small\item\em Reproduce a media object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classManagerObject_a33d7cdb10ab2eb143aae7c9bee89e92f}{delete\+Media}} (std\+::string name\+File)
+\begin{DoxyCompactList}\small\item\em Delete a media object from the manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classManagerObject_af424738fdd821fc490beea6df2f93e28}{delete\+Group}} (std\+::string name\+Group)
+\begin{DoxyCompactList}\small\item\em Delete a group from the manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classManagerObject_adb55ca425fa48692af2737df482eff42}\label{classManagerObject_adb55ca425fa48692af2737df482eff42}} 
+template$<$$>$ \mbox{\hyperlink{structVoidType}{Void\+Type}} {\bfseries reproduce\+Media} (std\+::string name\+File)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classManagerObject_a2fcd3031ad46dfd4f195d778710bc603}\label{classManagerObject_a2fcd3031ad46dfd4f195d778710bc603}} 
+\index{ManagerObject@{ManagerObject}!createFilm@{createFilm}}
+\index{createFilm@{createFilm}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{createFilm()}{createFilm()}}
+{\footnotesize\ttfamily Film\+Ptr Manager\+Object\+::create\+Film (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File,  }\item[{std\+::string}]{path\+File,  }\item[{int}]{duration,  }\item[{unsigned int $\ast$}]{tab,  }\item[{unsigned int}]{size }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classFilmObject}{Film\+Object}} and add it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the film file. \\
+\hline
+{\em path\+File} & The path to the film file. \\
+\hline
+{\em duration} & The duration of the film in seconds. \\
+\hline
+{\em chapters} & An array representing the chapters of the film. \\
+\hline
+{\em num\+Chapters} & The number of chapters in the film. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \mbox{\hyperlink{classFilmObject}{Film\+Object}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_a731bf425c55616941861265bacbd7bfe}\label{classManagerObject_a731bf425c55616941861265bacbd7bfe}} 
+\index{ManagerObject@{ManagerObject}!createGroup@{createGroup}}
+\index{createGroup@{createGroup}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{createGroup()}{createGroup()}}
+{\footnotesize\ttfamily Group\+Ptr Manager\+Object\+::create\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+Group }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classGroupObject}{Group\+Object}} and add it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Group} & The name of the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \mbox{\hyperlink{classGroupObject}{Group\+Object}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_ae65b688c50558a5b3db62d91b154f476}\label{classManagerObject_ae65b688c50558a5b3db62d91b154f476}} 
+\index{ManagerObject@{ManagerObject}!createPhoto@{createPhoto}}
+\index{createPhoto@{createPhoto}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{createPhoto()}{createPhoto()}}
+{\footnotesize\ttfamily Photo\+Ptr Manager\+Object\+::create\+Photo (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File,  }\item[{std\+::string}]{path\+File,  }\item[{float}]{latitude,  }\item[{float}]{longitude }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classPhotoObject}{Photo\+Object}} and add it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the photo file. \\
+\hline
+{\em path\+File} & The path to the photo file. \\
+\hline
+{\em latitude} & The latitude information for the photo. \\
+\hline
+{\em longitude} & The longitude information for the photo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \mbox{\hyperlink{classPhotoObject}{Photo\+Object}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_a1347a5c6694c02065bf94810c59cccec}\label{classManagerObject_a1347a5c6694c02065bf94810c59cccec}} 
+\index{ManagerObject@{ManagerObject}!createVideo@{createVideo}}
+\index{createVideo@{createVideo}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{createVideo()}{createVideo()}}
+{\footnotesize\ttfamily Video\+Ptr Manager\+Object\+::create\+Video (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File,  }\item[{std\+::string}]{path\+File,  }\item[{int}]{duration }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classVideoObject}{Video\+Object}} and add it to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the video file. \\
+\hline
+{\em path\+File} & The path to the video file. \\
+\hline
+{\em duration} & The duration of the video in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created \mbox{\hyperlink{classVideoObject}{Video\+Object}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_af424738fdd821fc490beea6df2f93e28}\label{classManagerObject_af424738fdd821fc490beea6df2f93e28}} 
+\index{ManagerObject@{ManagerObject}!deleteGroup@{deleteGroup}}
+\index{deleteGroup@{deleteGroup}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{deleteGroup()}{deleteGroup()}}
+{\footnotesize\ttfamily void Manager\+Object\+::delete\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+Group }\end{DoxyParamCaption})}
+
+
+
+Delete a group from the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Group} & The name of the group. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classManagerObject_a33d7cdb10ab2eb143aae7c9bee89e92f}\label{classManagerObject_a33d7cdb10ab2eb143aae7c9bee89e92f}} 
+\index{ManagerObject@{ManagerObject}!deleteMedia@{deleteMedia}}
+\index{deleteMedia@{deleteMedia}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{deleteMedia()}{deleteMedia()}}
+{\footnotesize\ttfamily void Manager\+Object\+::delete\+Media (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
+
+
+
+Delete a media object from the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classManagerObject_ab82eaad305c94dcbd21a185f616ecb11}\label{classManagerObject_ab82eaad305c94dcbd21a185f616ecb11}} 
+\index{ManagerObject@{ManagerObject}!displayGroup@{displayGroup}}
+\index{displayGroup@{displayGroup}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{displayGroup()}{displayGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Manager\+Object\+::display\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+Group }\end{DoxyParamCaption})}
+
+
+
+Display the variables of a group as a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Group} & The name of the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the group variables. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_a69bde6ed0f01a3f45b3f62a6fbeb2b59}\label{classManagerObject_a69bde6ed0f01a3f45b3f62a6fbeb2b59}} 
+\index{ManagerObject@{ManagerObject}!displayGroup@{displayGroup}}
+\index{displayGroup@{displayGroup}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{displayGroup()}{displayGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Manager\+Object\+::display\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+Group,  }\item[{std\+::ostream \&}]{log }\end{DoxyParamCaption})}
+
+
+
+Display the variables of a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Group} & The name of the group. \\
+\hline
+{\em log} & The output stream to which the variables will be displayed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classManagerObject_a606514c1e10ea8827ef206e5630a6ef9}\label{classManagerObject_a606514c1e10ea8827ef206e5630a6ef9}} 
+\index{ManagerObject@{ManagerObject}!displayMedia@{displayMedia}}
+\index{displayMedia@{displayMedia}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{displayMedia()}{displayMedia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Manager\+Object\+::display\+Media (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
+
+
+
+Display the variables of a media object as a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the media object variables. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_abf4d874f956aeaed8bf39c213a88191b}\label{classManagerObject_abf4d874f956aeaed8bf39c213a88191b}} 
+\index{ManagerObject@{ManagerObject}!displayMedia@{displayMedia}}
+\index{displayMedia@{displayMedia}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{displayMedia()}{displayMedia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Manager\+Object\+::display\+Media (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File,  }\item[{std\+::ostream \&}]{log }\end{DoxyParamCaption})}
+
+
+
+Display the variables of a media object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media object. \\
+\hline
+{\em log} & The output stream to which the variables will be displayed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classManagerObject_a3b9f585435f5243ffac8fb251746b065}\label{classManagerObject_a3b9f585435f5243ffac8fb251746b065}} 
+\index{ManagerObject@{ManagerObject}!find@{find}}
+\index{find@{find}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily std\+::string Manager\+Object\+::find (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
+
+
+
+Find and display the variables of a media object and/or group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media object or group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the displayed variables. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_ade248b266c146bce16952bc4d5340aea}\label{classManagerObject_ade248b266c146bce16952bc4d5340aea}} 
+\index{ManagerObject@{ManagerObject}!findGroup@{findGroup}}
+\index{findGroup@{findGroup}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{findGroup()}{findGroup()}}
+{\footnotesize\ttfamily Group\+Ptr Manager\+Object\+::find\+Group (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+Group }\end{DoxyParamCaption})}
+
+
+
+Find a group by its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Group} & The name of the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the found group, or nullptr if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_a99087b324651a7f294548bcbacc3ba58}\label{classManagerObject_a99087b324651a7f294548bcbacc3ba58}} 
+\index{ManagerObject@{ManagerObject}!findMedia@{findMedia}}
+\index{findMedia@{findMedia}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{findMedia()}{findMedia()}}
+{\footnotesize\ttfamily Media\+Ptr Manager\+Object\+::find\+Media (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
+
+
+
+Find a media object by its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the found media object, or nullptr if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classManagerObject_a25a1f25eec25769b8d19608f7122b1c0}\label{classManagerObject_a25a1f25eec25769b8d19608f7122b1c0}} 
+\index{ManagerObject@{ManagerObject}!reproduceMedia@{reproduceMedia}}
+\index{reproduceMedia@{reproduceMedia}!ManagerObject@{ManagerObject}}
+\doxysubsubsection{\texorpdfstring{reproduceMedia()}{reproduceMedia()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Manager\+Object\+::reproduce\+Media (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File }\end{DoxyParamCaption})}
+
+
+
+Reproduce a media object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The return type of the reproduction (\mbox{\hyperlink{structVoidType}{Void\+Type}} or std\+::string). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the media object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A message informing the status of the reproduction. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{managerObject_8h}{manager\+Object.\+h}}\item 
+cpp/manager\+Object.\+cpp\end{DoxyCompactItemize}

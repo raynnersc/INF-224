@@ -1,0 +1,37 @@
+\hypertarget{filmObject_8h}{}\doxysection{cpp/film\+Object.h File Reference}
+\label{filmObject_8h}\index{cpp/filmObject.h@{cpp/filmObject.h}}
+
+
+Header file for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class.  
+
+
+{\ttfamily \#include \char`\"{}video\+Object.\+h\char`\"{}}\newline
+Include dependency graph for film\+Object.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classFilmObject}{Film\+Object}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{filmObject_8h_a8bee2f553d74413a9118e19f54260e19}\label{filmObject_8h_a8bee2f553d74413a9118e19f54260e19}} 
+std\+::string {\bfseries end\+Line}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. 
+
+\begin{DoxyAuthor}{Author}
+Raynner Schnneider Carvalho 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/11-\/19 
+\end{DoxyDate}

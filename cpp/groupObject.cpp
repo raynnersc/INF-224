@@ -15,7 +15,7 @@ std::string GroupObject::getNameGroup() const
 void GroupObject::displayVariables(std::ostream &log) const
 {
     log << "Group Name: " << this->getNameGroup() << std::endl;
-    for (auto it = this->begin(); it != this->end(); ++it) //for(auto &it : *this)
+    for (auto it = this->begin(); it != this->end(); ++it) // for(auto &it : *this)
     {
         (*it)->displayVariables(log);
     }
@@ -24,7 +24,7 @@ void GroupObject::displayVariables(std::ostream &log) const
 std::string GroupObject::displayVariables() const
 {
     std::string str = "Group Name: " + this->getNameGroup() + this->endLine;
-    for (auto it = this->begin(); it != this->end(); ++it) //for(auto &it : *this)
+    for (auto it = this->begin(); it != this->end(); ++it) // for(auto &it : *this)
     {
         str += (*it)->displayVariables();
     }

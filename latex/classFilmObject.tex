@@ -1,0 +1,217 @@
+\hypertarget{classFilmObject}{}\doxysection{Film\+Object Class Reference}
+\label{classFilmObject}\index{FilmObject@{FilmObject}}
+
+
+Inheritance diagram for Film\+Object\+:
+% FIG 0
+
+
+Collaboration diagram for Film\+Object\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFilmObject_a287e7183caae9f47242926f0646eaec2}{Film\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFilmObject_ab3e82bfa9f58bce43165f02087beb3f8}{Film\+Object}} (std\+::string name\+File, std\+::string path\+File, const unsigned int duration, const unsigned int $\ast$chapters, const unsigned int num\+Chapters)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFilmObject_a95ab09d886316334ac4842bab98e50dc}{$\sim$\+Film\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFilmObject_a5e4004c29d82420841826392fc2a4c07}{set\+Chapters}} (const unsigned int $\ast$chapters, const unsigned int num\+Chapters)
+\begin{DoxyCompactList}\small\item\em Set chapters for the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. \end{DoxyCompactList}\item 
+unsigned int $\ast$ \mbox{\hyperlink{classFilmObject_aeaed946fcca4ad0ae11347ae994f1e76}{get\+Chapters}} () const
+\begin{DoxyCompactList}\small\item\em Get the chapters array for the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classFilmObject_af89d3e3d0e372255d0d4ef01928b6754}{get\+Num\+Chapters}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of chapters for the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFilmObject_ae70bfd20326c7b7ce06413e7ef5c1e45}{display\+Variables}} (std\+::ostream \&log) const override
+\begin{DoxyCompactList}\small\item\em Display the variables of the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classFilmObject_a1544577d732bdf82a5e986a9a94bf25e}{display\+Variables}} () const override
+\begin{DoxyCompactList}\small\item\em Display the variables of the \mbox{\hyperlink{classFilmObject}{Film\+Object}} as a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFilmObject_ab34e5764a3f77f3ad6867abf0f092ac6}{Film\+Object}} (const \mbox{\hyperlink{classFilmObject}{Film\+Object}} \&from)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFilmObject}{Film\+Object}} \& \mbox{\hyperlink{classFilmObject_a60649499c86c224beed36bd61a60bdf0}{operator=}} (const \mbox{\hyperlink{classFilmObject}{Film\+Object}} \&from)
+\begin{DoxyCompactList}\small\item\em Assignment operator for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFilmObject_a287e7183caae9f47242926f0646eaec2}\label{classFilmObject_a287e7183caae9f47242926f0646eaec2}} 
+\index{FilmObject@{FilmObject}!FilmObject@{FilmObject}}
+\index{FilmObject@{FilmObject}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{FilmObject()}{FilmObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Film\+Object\+::\+Film\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. 
+
+This constructor creates an instance of \mbox{\hyperlink{classFilmObject}{Film\+Object}} using the default constructor of the base class \mbox{\hyperlink{classVideoObject}{Video\+Object}}. It initializes the chapters array as an empty array and sets the number of chapters (num\+Chapters) to zero. \mbox{\Hypertarget{classFilmObject_ab3e82bfa9f58bce43165f02087beb3f8}\label{classFilmObject_ab3e82bfa9f58bce43165f02087beb3f8}} 
+\index{FilmObject@{FilmObject}!FilmObject@{FilmObject}}
+\index{FilmObject@{FilmObject}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{FilmObject()}{FilmObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Film\+Object\+::\+Film\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+File,  }\item[{std\+::string}]{path\+File,  }\item[{const unsigned int}]{duration,  }\item[{const unsigned int $\ast$}]{chapters,  }\item[{const unsigned int}]{num\+Chapters }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. 
+
+This constructor creates an instance of \mbox{\hyperlink{classFilmObject}{Film\+Object}} with specified parameters. It initializes the \mbox{\hyperlink{classFilmObject}{Film\+Object}} using the constructor of the base class \mbox{\hyperlink{classVideoObject}{Video\+Object}}, setting the name, path, and duration. Additionally, it sets the number of chapters and allocates memory for the chapters array, copying the values from the input array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+File} & The name of the film file. \\
+\hline
+{\em path\+File} & The path to the film file. \\
+\hline
+{\em duration} & The duration of the film in seconds. \\
+\hline
+{\em chapters} & An array representing the chapters of the film. \\
+\hline
+{\em num\+Chapters} & The number of chapters in the film. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFilmObject_a95ab09d886316334ac4842bab98e50dc}\label{classFilmObject_a95ab09d886316334ac4842bab98e50dc}} 
+\index{FilmObject@{FilmObject}!````~FilmObject@{$\sim$FilmObject}}
+\index{````~FilmObject@{$\sim$FilmObject}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$FilmObject()}{~FilmObject()}}
+{\footnotesize\ttfamily Film\+Object\+::$\sim$\+Film\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. 
+
+This destructor is responsible for deallocating resources associated with a \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance. It prints a message to the console indicating that the \mbox{\hyperlink{classFilmObject}{Film\+Object}} destructor is being called, and then frees the memory allocated for the chapters array. \mbox{\Hypertarget{classFilmObject_ab34e5764a3f77f3ad6867abf0f092ac6}\label{classFilmObject_ab34e5764a3f77f3ad6867abf0f092ac6}} 
+\index{FilmObject@{FilmObject}!FilmObject@{FilmObject}}
+\index{FilmObject@{FilmObject}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{FilmObject()}{FilmObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Film\+Object\+::\+Film\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFilmObject}{Film\+Object}} \&}]{from }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. 
+
+This constructor creates a new \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance by copying the contents of another \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance (from). It utilizes the copy constructor of the base class \mbox{\hyperlink{classVideoObject}{Video\+Object}} and then copies the number of chapters and allocates memory for the chapters array if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFilmObject_a1544577d732bdf82a5e986a9a94bf25e}\label{classFilmObject_a1544577d732bdf82a5e986a9a94bf25e}} 
+\index{FilmObject@{FilmObject}!displayVariables@{displayVariables}}
+\index{displayVariables@{displayVariables}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{displayVariables()}{displayVariables()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Film\+Object\+::display\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the variables of the \mbox{\hyperlink{classFilmObject}{Film\+Object}} as a string. 
+
+This function returns a string containing the variables of the \mbox{\hyperlink{classFilmObject}{Film\+Object}}, including the base class \mbox{\hyperlink{classVideoObject}{Video\+Object}}\textquotesingle{}s variables and the chapters of the film.
+
+\begin{DoxyReturn}{Returns}
+A string representation of the \mbox{\hyperlink{classFilmObject}{Film\+Object}} variables. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classMediaObject_a99df1a9b433d25fec2292ad0076c984b}{Media\+Object}}.
+
+\mbox{\Hypertarget{classFilmObject_ae70bfd20326c7b7ce06413e7ef5c1e45}\label{classFilmObject_ae70bfd20326c7b7ce06413e7ef5c1e45}} 
+\index{FilmObject@{FilmObject}!displayVariables@{displayVariables}}
+\index{displayVariables@{displayVariables}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{displayVariables()}{displayVariables()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Film\+Object\+::display\+Variables (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{log }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the variables of the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. 
+
+This function displays the variables of the \mbox{\hyperlink{classFilmObject}{Film\+Object}}, including the base class \mbox{\hyperlink{classVideoObject}{Video\+Object}}\textquotesingle{}s variables and the chapters of the film.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & The output stream to which the variables will be displayed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMediaObject_a1f1f8dc66767b03bb604a9051330238d}{Media\+Object}}.
+
+\mbox{\Hypertarget{classFilmObject_aeaed946fcca4ad0ae11347ae994f1e76}\label{classFilmObject_aeaed946fcca4ad0ae11347ae994f1e76}} 
+\index{FilmObject@{FilmObject}!getChapters@{getChapters}}
+\index{getChapters@{getChapters}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{getChapters()}{getChapters()}}
+{\footnotesize\ttfamily unsigned int $\ast$ Film\+Object\+::get\+Chapters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the chapters array for the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. 
+
+This function returns a pointer to the chapters array of the \mbox{\hyperlink{classFilmObject}{Film\+Object}}.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the chapters array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFilmObject_af89d3e3d0e372255d0d4ef01928b6754}\label{classFilmObject_af89d3e3d0e372255d0d4ef01928b6754}} 
+\index{FilmObject@{FilmObject}!getNumChapters@{getNumChapters}}
+\index{getNumChapters@{getNumChapters}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{getNumChapters()}{getNumChapters()}}
+{\footnotesize\ttfamily unsigned int Film\+Object\+::get\+Num\+Chapters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of chapters for the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. 
+
+This function returns the number of chapters in the \mbox{\hyperlink{classFilmObject}{Film\+Object}}.
+
+\begin{DoxyReturn}{Returns}
+The number of chapters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFilmObject_a60649499c86c224beed36bd61a60bdf0}\label{classFilmObject_a60649499c86c224beed36bd61a60bdf0}} 
+\index{FilmObject@{FilmObject}!operator=@{operator=}}
+\index{operator=@{operator=}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFilmObject}{Film\+Object}} \& Film\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFilmObject}{Film\+Object}} \&}]{from }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} class. 
+
+This assignment operator overloads the assignment operator to copy the contents of another \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance (from) into the current instance. It utilizes the assignment operator of the base class \mbox{\hyperlink{classVideoObject}{Video\+Object}} and then copies the number of chapters and allocates memory for the chapters array if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance to be assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the current \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance after the assignment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFilmObject_a5e4004c29d82420841826392fc2a4c07}\label{classFilmObject_a5e4004c29d82420841826392fc2a4c07}} 
+\index{FilmObject@{FilmObject}!setChapters@{setChapters}}
+\index{setChapters@{setChapters}!FilmObject@{FilmObject}}
+\doxysubsubsection{\texorpdfstring{setChapters()}{setChapters()}}
+{\footnotesize\ttfamily void Film\+Object\+::set\+Chapters (\begin{DoxyParamCaption}\item[{const unsigned int $\ast$}]{chapters,  }\item[{const unsigned int}]{num\+Chapters }\end{DoxyParamCaption})}
+
+
+
+Set chapters for the \mbox{\hyperlink{classFilmObject}{Film\+Object}}. 
+
+This function sets the chapters for the \mbox{\hyperlink{classFilmObject}{Film\+Object}} instance. It first deallocates any existing chapters array to avoid memory leaks. Then, it allocates a new array and copies the values from the input array. Finally, it updates the number of chapters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chapters} & An array representing the chapters of the film. \\
+\hline
+{\em num\+Chapters} & The number of chapters in the film. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{filmObject_8h}{film\+Object.\+h}}\item 
+cpp/film\+Object.\+cpp\end{DoxyCompactItemize}
